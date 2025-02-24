@@ -1,59 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login Form Animation CSS | Coding Vibess</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Awesome Website</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial,sans-serif;
+            background-color: chartreuse;
+            color: blue;
+            padding-bottom: 2em;
+        }
+        nav{
+            background-color: brown;
+            padding: 1em;
+            text-align: center;
+        }
+        nav ul{
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li{
+            margin-right: 0 20px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: aliceblue;
+            font-weight: bold;
+        }
+        header{
+            text-align: center;
+            padding: 4em 0;
+            background-color: crimson;
+            color: aqua;
+        }
+        header h1{
+            font-size: 3em;
+            animation: fadeIn 2s ease-in-out;
+        }
+        header p{
+            font-size: 1.2em;
+            margin-bottom: 1.5em;
+        }
+        section{
+            padding: 2em;
+            text-align: center;
+        }
+        .btn{
+            padding: 10px 20px;
+            background-color: darkblue;
+            color: greenyellow;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .btn:hover{
+            background-color: darkgoldenrod;
+            color: aqua;
+        }
+        @keyframes fadeIn{
+            from{
+                opacity: 0;
+            }
+            to{
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+       <ul>
+        <li> <a href="Index.html">Home</a> </li>
+        <li> <a href="About.html">About Us</a> </li>
+        <li> <a href="Services.html">Our Services</a> </li>
+        <li> <a href="contact.html">Contact Us</a> </li>
+       </ul>
+    </nav>
 
-  <body>
-    <div class="glowing-light"></div>
-    <div class="login-box">
-      <form action="#">
-        <input type="checkbox" class="input-check" id="input-check" />
-        <label for="input-check" class="toggle">
-          <span class="text off">off</span>
-          <span class="text on">on</span>
-        </label>
-        <div class="light"></div>
+    <header>
+        <h1>Welcome To My Awesome Website</h1>
+        <p>This is simple and modern website created using HTML And CSS.</p>
+        <button class="btn">Learn More</button>
+    </header>
 
-        <h2>Login</h2>
-        <div class="input-box">
-          <span class="icon">
-            <ion-icon name="mail"></ion-icon>
-          </span>
-          <input type="email" required />
-          <label>Email</label>
-          <div class="input-line"></div>
-        </div>
-        <div class="input-box">
-          <span class="icon">
-            <ion-icon name="lock-closed"></ion-icon>
-          </span>
-          <input type="password" required />
-          <label>Password</label>
-          <div class="input-line"></div>
-        </div>
-        <div class="remember-forgot">
-          <label><input type="checkbox" /> Remember me</label>
-          <a href="#">Forgot Password?</a>
-        </div>
-        <button type="submit">Login</button>
-        <div class="register-link">
-          <p>Don't have an account? <a href="#">Register</a></p>
-        </div>
-      </form>
-    </div>
-
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-  </body>
+    <section>
+        <h2>About This Project</h2>
+        <p>This project is hosted using GitHub Pages. Explore the navigation bar to visit different pages.</p>
+    </section>
+</body>
 </html>
